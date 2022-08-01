@@ -1,0 +1,5 @@
+torch>=1.8.0
+adapter-transformers==2.2.0
+datasets==1.18.3
+numpy==1.22.2
+scikit-learn==1.0.2
