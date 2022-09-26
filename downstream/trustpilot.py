@@ -50,7 +50,7 @@ class Trustpilot(datasets.GeneratorBasedBuilder):
             domain_test=domain_test,
             task=task,
             name=factor+"."+country+"."+domain_train+"."+domain_test+"."+task,
-            data_dir = f"./trustpilot/{factor}/{task}/",
+            data_dir = f"./data/{factor}/{task}/",
             description=f"Factor: {factor}, Country: {country}, Domain_TRAIN: {domain_train}, Domain_TEST: {domain_test}, Task: {task}",
         )
         for factor in _FACTOR
