@@ -14,7 +14,7 @@ CUDA_VISIBLE_DEVICES=$gpu python run_mtl_ctx.py \
     --output_dir=${output_dir} \
     --train_file=${train_file} \
     --validation_file=${val_file} \
-    --cache_dir="/work/chung/data/data-multiwoz/ToD-BERT/save/transformers" \
+    --cache_dir="" \
     --line_by_line \
     --do_train \
     --do_eval \
