@@ -2,20 +2,29 @@
 
 Authors: Chia-Chien Hung, Anne Lauscher, Dirk Hovy, Simone Paolo Ponzetto, Goran Glavaš 
 
-EACL 2023. Findings: coming soon ([arXiv](https://arxiv.org/pdf/2210.07362.pdf))
+EACL 2023. Findings: https://aclanthology.org/2023.findings-eacl.116/
 
 ## Introduction
-Demographic factors (e.g., gender or age) shape our language. Previous work showed that incorporating demographic factors can consistently improve performance for various NLP tasks with traditional NLP models. In this work, we investigate whether these previous findings still hold with state-of-the-art pretrained Transformer-based language models (PLMs). We use three common specialization methods proven effective for incorporating external knowledge into pretrained Transformers (e.g., domain-specific or geographic knowledge). We adapt the language representations for the demographic dimensions of gender and age, using continuous language modeling and dynamic multi-task learning for adaptation, where we couple language modeling objectives with the prediction of demographic classes. Our results, when employing a multilingual PLM, show substantial gains in task performance across four languages (English, German, French, and Danish), which is consistent with the results of previous work. However, controlling for confounding factors – primarily domain and language proficiency of Transformer-based PLMs – shows that downstream perfor- mance gains from our demographic adaptation do not actually stem from demographic knowledge. Our results indicate that demographic specialization of PLMs, while holding promise for positive societal impact, still represents an unsolved problem for (modern) NLP.
+Demographic factors (e.g., gender or age) shape our language. Previous work showed that incorporating demographic factors can consistently improve performance for various NLP tasks with traditional NLP models. In this work, we investigate whether these previous findings still hold with state-of-the-art pretrained Transformer-based language models (PLMs). We use three common specialization methods proven effective for incorporating external knowledge into pretrained Transformers (e.g., domain-specific or geographic knowledge). We adapt the language representations for the demographic dimensions of gender and age, using continuous language modeling and dynamic multi-task learning for adaptation, where we couple language modeling objectives with the prediction of demographic classes. Our results, when employing a multilingual PLM, show substantial gains in task performance across four languages (English, German, French, and Danish), which is consistent with the results of previous work. However, controlling for confounding factors – primarily domain and language proficiency of Transformer-based PLMs – shows that downstream performance gains from our demographic adaptation do not actually stem from demographic knowledge. Our results indicate that demographic specialization of PLMs, while holding promise for positive societal impact, still represents an unsolved problem for (modern) NLP.
 
 
 ## Citation
 If you use any source codes, or datasets included in this repo in your work, please cite the following paper:
 <pre>
-@article{hung2022can,
-  title={Can Demographic Factors Improve Text Classification? Revisiting Demographic Adaptation in the Age of Transformers},
-  author={Hung, Chia-Chien and Lauscher, Anne and Hovy, Dirk and Ponzetto, Simone Paolo and Glava{\v{s}}, Goran},
-  journal={arXiv preprint arXiv:2210.07362},
-  year={2022}
+@inproceedings{hung-etal-2023-demographic,
+    title = "Can Demographic Factors Improve Text Classification? Revisiting Demographic Adaptation in the Age of Transformers",
+    author = "Hung, Chia-Chien  and
+      Lauscher, Anne  and
+      Hovy, Dirk  and
+      Ponzetto, Simone Paolo  and
+      Glava{\v{s}}, Goran",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2023",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-eacl.116",
+    pages = "1565--1580",
 }
 </pre>
 
